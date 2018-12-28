@@ -1,0 +1,24 @@
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+    JUMP     d
+a:
+b:
+    COPYFROM 5
+c:
+    OUTBOX  
+d:
+    INBOX   
+    JUMPN    e
+    INBOX   
+    JUMPN    b
+    JUMP     g
+e:
+    INBOX   
+    JUMPN    f
+    JUMP     a
+f:
+g:
+    COPYFROM 4
+    JUMP     c
+
+

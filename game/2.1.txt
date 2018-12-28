@@ -1,0 +1,8 @@
+var string = [1,2,3,4,6,2,5,1,7];
+function jump() {
+  for (let i = 0; i < string.length; i++) {
+    const output = string[i];
+    console.log(output)
+  }
+}
+jump()

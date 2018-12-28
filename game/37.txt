@@ -1,0 +1,18 @@
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+a:
+    INBOX   
+b:
+    COPYTO   5
+    COPYFROM [5]
+    OUTBOX  
+    BUMPUP   5
+    COPYFROM [5]
+    JUMPN    a
+    JUMP     b
+
+
+DEFINE LABEL 5
+eJzjZ2BgKIrM8JSNbIlUiJiWcj3oZvcrL6Vtvq6+54FSDJ3+qkp6QVqq6qFmOtsSSgJullodKawte57R
+2PeVYRSMglEw5AEAgb0WQQ;
+

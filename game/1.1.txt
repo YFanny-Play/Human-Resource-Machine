@@ -1,0 +1,6 @@
+var input1 = 8;
+console.log(input1);
+var input2 = 2;
+console.log(input2);
+var input3 = 4;
+console.log(input3);

@@ -1,0 +1,40 @@
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+    INBOX   
+    COPYTO   0
+    OUTBOX  
+    COPYFROM 14
+    COPYTO   12
+    JUMP     b
+a:
+    COPYFROM [12]
+    OUTBOX  
+b:
+    BUMPUP   12
+c:
+    COPYFROM 14
+    COPYTO   13
+    INBOX   
+    COPYTO   [12]
+d:
+    SUB      [13]
+    JUMPZ    c
+    BUMPUP   13
+    SUB      12
+    JUMPZ    a
+    COPYFROM [12]
+    JUMP     d
+
+
+DEFINE LABEL 12
+eJzzZ2BgyLbI9cm2eD1Vxqzva7Fp56dSk5gbCiZnW46aLcnZZJfousTFxcTD3Vr/hbeV3mNfd7MHfomu
+D/ymJr/xVNr2xvPRhBfeB2quB1UGF0X6WYnEOhptS7DWj0q2N1yT4mm+NL0l0i9jfZFfxocZS9PFNzCn
+5DwEWslgMn1+5stJk5Nm9/fF72nsixdtmJEqUb+28HCd7/mc+uQ7gk35jyPb8x8v70q8/Xqi5i6zaT/m
+ts040XhrxvzMu9OX5Nyftqnk4dSXUx5OVdrWMd3xRPNM3/P1s/0ugMz23ZDsdmd3sG3B0WBb/lOJrlHn
+SgJWXOyJ87+8Mn/eVbH1764b7n950/HE7fuR1648irt55GXCrYw3MTd43gdf5vrgfY7rg/SmXW/Zlh17
+8WwSyLyGR6nuNx/k+ky/sa967XnulUqHKl7s2/3/P8MoGAXDAAAAn6OeIw;
+
+DEFINE LABEL 13
+eJwTY2BguOdvrX/Pf1nuA7+j9eZ+MpvN/bo+9/lWvrTydTvd53u0Xi+oL/5sWIZnUWScs2BcsG18YoB1
+cFqA9a/0IJsFmZEO87KS3eZk5/u65kxMnJkTdGle1v//DKNgFIyCIQEA068lvA;
+

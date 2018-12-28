@@ -1,0 +1,77 @@
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+    JUMP     b
+a:
+    COPYFROM 0
+    OUTBOX  
+b:
+c:
+    INBOX   
+    COPYTO   5
+    COPYFROM 24
+    COPYTO   6
+    COPYTO   0
+    BUMPUP   0
+    BUMPUP   0
+    COPYFROM 5
+    SUB      0
+    JUMPZ    a
+d:
+e:
+    COPYFROM 5
+    SUB      0
+    JUMPN    c
+    ADD      0
+    COPYTO   10
+f:
+    SUB      0
+    COPYTO   10
+    BUMPUP   6
+    COPYFROM 10
+    JUMPZ    h
+    JUMPN    g
+    JUMP     f
+g:
+    BUMPUP   0
+    COPYFROM 24
+    COPYTO   6
+    JUMP     e
+h:
+    COPYFROM 0
+    OUTBOX  
+    COPYFROM 6
+    COPYTO   5
+    COPYTO   10
+    COPYFROM 24
+    COPYTO   6
+    JUMP     d
+
+
+DEFINE LABEL 0
+eJzbxcDAYM3KIWjNmuwGZDL0sgmIbZUUEo+TkpSOk/Kz2iqZ5gES1+X2tpAS9rYAsSew5vu2cOX6XOTN
+8OSRzPAEibkzbC2z0txSCmI/Yd1X/YTV4jCIXSx4qqlYMPzqKYHCJyD+XY7Ps2p5P88Csds4xTdc4RHf
+AGJbsvmeVxTwPX9Y2PvcPlG30yCxTVK3e/7J3e5xU3nQ/17l00w3FcbF7NJxN0Fy7NJ/5v+Tk9nsreR2
+eppazkOQWIiTk3GIk8LWCAe30xEOARfZ7L3PCVjr7BGyktkMkhe3OFovaf5yirKxwlYQf7L3ouzJ3uuL
+zP3u9z3w414JEkuLk5NTrJaRBbF3xKsr74jfUMwf/2Pu/hink0eiEm6BxAPTW6OaylqjQOw3uYmub3LP
+NIPYXln/FvhkPpvkk3mlwydTfMP3DK4VIHGfzBtdk/Ivt2tUgDDvKpCYedGveX2Fkhuf5xsfeJcTeW1O
+durdOdkQ8x8VGh+4W2xxWKqu5BmIH9AtJvmh39cSxNaZJS7VMV1LFcT+1xnvcnxBvEvO4hinw4vC7UFi
+ryfyikybuCQHxH47oTbUr2dqMkPn6gKI3trQi3NmpF6cMzcDxG+eOT/TaeK1zrl9H2acmWe4HyR2Zt7N
+7kU9GfdB7NDOKx2qc691gsN7lb5G3Moox9RlXbEgfsKKIv/I1UX+7zenurttzvZ221wZ/GXjnPQl6/dV
+b1r5dfa+JZIbQeqSli/J+b1OetO3DRDzr+6z0L26D+LP2LO1oQeOL8wqOrKhWO7I1rK153/N87kitwUk
+53FtTvqlx3PSwWF84800yzuvpzY9fNCv8vR+H0hM4lWia9rbGKd1n2Kc/n1Jdf/5rcjf7/ustFVf9lVv
+/gBSJ7lR6ZnM5rS3Iusc/gqsYRgFOAEAMuAX3w;
+
+DEFINE LABEL 5
+eJwTYGBg4EgKtz8dvrawKehi2y9npW1AIQbNEAGxI1GS0hmxSgocSRa6/1JjnOZlLcnpLP40U75GciNP
+i/GByHaLwwyjYBSMgiENAEVpFr8;
+
+DEFINE LABEL 6
+eJwzY2BgcPTiFZnszS/6wE9ZEchlKDALsN5t5WtpHKCvsS1BXTk0VUkBJO7v4mu5xCXUbpZHvi+InxZn
+qCkWY2tQEhHpUB2a6g4S22YzI3WbjdwWXhvD/TutC5+AxNjse+J2x7VHb07simVLnpCwJuVE46rU9o/8
+8bmPQPJ9vkty5rjf7AaxrwavLSyKvNubG/18Mog/x/3XvDnufhdA7PceX2f3+H2dfSfg00yFiE8z86O+
+zpaM/jVPMtrzLEje2TP0Sqd/6JWSCN/zDKNgFIwCogAA5XBLfA;
+
+DEFINE LABEL 10
+eJyTZGBgMNbpiVvr0BX70b092sanKaIupCTgQmi+r0JEvItCRLh9eXiQjXqou9mdAGt9Gx9jLQ93Q835
+bmY6gc6tUWGO9/vWOvCuYnLMfRTiVPHil3Ptay+3ujeTveveGAeUPdcLyn3EMApGwSgYtAAAm0ImjA;
+
