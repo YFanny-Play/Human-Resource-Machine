@@ -2,6 +2,7 @@
 
     JUMP     c
 a:
+    COPYFROM 0
 b:
     OUTBOX  
 c:
@@ -9,11 +10,8 @@ c:
     COPYTO   0
     INBOX   
     SUB      0
-    JUMPN    d
+    JUMPN    a
     ADD      0
     JUMP     b
-d:
-    COPYFROM 0
-    JUMP     a
 
 
