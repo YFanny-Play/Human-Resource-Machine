@@ -3,22 +3,20 @@
     JUMP     d
 a:
 b:
-    COPYFROM 5
+    COPYFROM 4
 c:
     OUTBOX  
 d:
     INBOX   
     JUMPN    e
     INBOX   
-    JUMPN    b
-    JUMP     g
+    JUMPN    f
+    JUMP     b
 e:
     INBOX   
-    JUMPN    f
-    JUMP     a
+    JUMPN    a
 f:
-g:
-    COPYFROM 4
+    COPYFROM 5
     JUMP     c
 
 
