@@ -11,11 +11,10 @@ c:
     COPYFROM 5
     COPYTO   7
 d:
-    COPYFROM 6
-    SUB      [7]
-    JUMPZ    c
     COPYFROM [7]
     JUMPZ    a
+    SUB      6
+    JUMPZ    c
     BUMPUP   7
     JUMP     d
 
