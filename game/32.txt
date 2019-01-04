@@ -1,31 +1,26 @@
 -- HUMAN RESOURCE MACHINE PROGRAM --
 
-    JUMP     c
+    JUMP     b
 a:
-b:
     COPYFROM 17
     OUTBOX  
-c:
+b:
     INBOX   
     COPYTO   15
     COPYFROM 14
     COPYTO   16
     COPYTO   17
-d:
-e:
-    COPYFROM 15
-    SUB      [16]
-    JUMPZ    f
-    BUMPUP   16
-    COPYFROM [16]
-    JUMPZ    b
-    JUMP     e
-f:
-    BUMPUP   17
-    BUMPUP   16
+c:
     COPYFROM [16]
     JUMPZ    a
-    JUMP     d
+    SUB      15
+    JUMPZ    d
+    JUMP     e
+d:
+    BUMPUP   17
+e:
+    BUMPUP   16
+    JUMP     c
 
 
 DEFINE LABEL 15
