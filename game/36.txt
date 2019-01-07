@@ -1,81 +1,56 @@
 -- HUMAN RESOURCE MACHINE PROGRAM --
 
     COPYFROM 23
-    COPYTO   21
-    COPYFROM 24
     COPYTO   22
+    COPYTO   21
 a:
-    INBOX   
-    COPYTO   [21]
-    JUMPZ    b
-    BUMPUP   21
-    JUMP     a
 b:
 c:
 d:
 e:
+f:
     INBOX   
     COPYTO   [22]
-    JUMPZ    f
+    JUMPZ    g
     BUMPUP   22
-    JUMP     c
-f:
-    COPYFROM 23
-    COPYTO   21
-    COPYFROM 24
-    COPYTO   22
+    JUMP     a
 g:
-    COPYFROM [22]
-    SUB      [21]
-    JUMPN    h
-    JUMPZ    k
-    JUMP     l
 h:
+    COPYFROM [21]
+    JUMPZ    f
+    INBOX   
+    JUMPZ    e
+    COPYTO   [24]
+    SUB      [21]
+    JUMPN    k
+    JUMPZ    j
 i:
-    COPYFROM 24
-    COPYTO   22
-j:
-    COPYFROM [22]
+    COPYFROM [21]
     JUMPZ    d
     OUTBOX  
-    BUMPUP   22
-    JUMP     j
-k:
     BUMPUP   21
-    BUMPUP   22
-    COPYFROM [22]
-    JUMPZ    i
+    JUMP     i
+j:
     COPYFROM [21]
-    JUMPZ    m
-    JUMP     g
-l:
-m:
-    COPYFROM 23
-    COPYTO   21
-n:
-    COPYFROM [21]
-    JUMPZ    e
+    JUMPZ    c
     OUTBOX  
     BUMPUP   21
-    JUMP     n
+    JUMP     h
+k:
+    COPYFROM [24]
+l:
+    OUTBOX  
+    INBOX   
+    JUMPZ    b
+    JUMP     l
 
 
 DEFINE LABEL 21
-eJxLY2BgOM8XYK3ML7lRgzfuphZPwMUrPN/nnOe70iEjtKVUWGxaSrhsWaCvYobnbJVE137NOGcLrYVZ
-U9SfT36vIrN5rrLOni9K6ju/KL2b/kl5dcE0tYZwC614l1ZdP6saQ1uDkyZmOiKWZjq7rewNeW18LRNs
-Mzw32U1LibZ/NIHNXmRdirX3OaATGAwCF2ZdDT5QcyfgSgeI3+PHtcLUX2RdXYjVERC/s1hZ0aTYz8q8
-KM1jem5P3IOiyuD8ujjn5GY/K77mUDvt8r54xeqJiTwt7dFXyvdU3Sw90Xit7ExzYe2Z5qyGo/W7mnZX
-GpW8m65R8WGGRP2jCRL1L6dcKeda8Tzf+IBDnu0xp1zf832Fvud1y1xOlVWbHhRu5F6Z0fhvwf6G73PK
-qp9MrKh6NOF85fPJFVUymz/U/f8PcpN5wf//RiU5Dy0LS57dSYOIFS84XGe143AdiD31priU8w115cBL
-4fZhF1Ld48+UBDy97Wle8txCl+uDvkbZM0/z6w+T3XQfFvpdf3i47vpDw/26DzPuX39Y8oxhFIwCOgEA
-bXGxlg;
+eJwTZmBgmO6zzHKy/9+w5wH2udZBZ+Y8Dcq4+Cww4OTEQP19kwK62p4HKCYbRy6z1I+daKSZ1GdYnbrS
+qipth31ZFk/MiZwtU07kWB86npt9iWEUUAVcf1jybKDdMApGDgAAWTUlNQ;
 
 DEFINE LABEL 22
-eJyLZ2BgYJWJcWKV4V21Scri8Capz7MWKWZ5zVYJspmi7mTcpW2ifUvXWEvLwNbgjHGc83HTrtjjprd7
-Tpq4nwFqZQhxmpCwxGVaCoi9xfbr7EBnrhUgtlK4vaFSeID1hdAMT94EK73YJGOtjUnW+jviw+13xMc4
-cSRFOb7LkZPzyrLQdcq10H2X42LyOSvIRjBuanJgelfsirQZqTviTzVdCmFcrB0ssu5SiNDa2KRnk9yz
-L7cblRxvuFRxolGt8myLWuXN7vryZ5Mc8rhXfs0UW/89g3lJYPqM1BVpqwtWpJ1o9MuQ27I4o+7N0vSG
-t4yp+Y+3JaTelYxOuFUennCrJML7nGCc0raNSbyrVqVyLP+XKrdlTYrOHt4E73MgP8S0TU22nTw1+dnk
-WWnPJi/LZe74NS+nXmePRL3VkT2NtsfiWq2PMnSaHmybAfGz8xYt1VmbTbT/rk10zVu0Mn/P0jnpv9e1
-RhnvLgl4tbUvftbmZbnzN36fM3+j2+mPm6KuM4yCUTAIAACdaaIh;
+eJyTZWBg6A2dYtwbarT/cUjY6b6QDysehR6b1RGZVnUzlj9WM+myh1rqPsczmWusC/JXWuUXbLLNKzzr
+Jl7slCdePLNbokhwS27R5M6sEulEofLLHrsq19vwVS+z3FI33YStabrJ+uZZphGtK61WdvwKDeqqbgzq
+KrzCMApGwSgYNAAA2pYzdA;
 
